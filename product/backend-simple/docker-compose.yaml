@@ -1,0 +1,20 @@
+# requires version>1.5+ for environment variable substitution
+
+services:
+  static_1:
+    build: "${HOST_ROOT_DIR_SERVICE}/example-static-1/"
+    ports:
+    - "8001:8000"
+    networks:
+    - example_network
+
+  static_2:
+    build: "${HOST_ROOT_DIR_SERVICE}/example-static-2/"
+    ports:
+    - "8002:8000"
+    networks:
+    - example_network
+
+
+networks:
+  example_network: {}

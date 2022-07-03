@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+HOST_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+export HOST_ROOT_DIR
+export HOST_ROOT_DIR_PRODUCT="${HOST_ROOT_DIR}/product"
+export HOST_ROOT_DIR_SERVICE="${HOST_ROOT_DIR}/service"
